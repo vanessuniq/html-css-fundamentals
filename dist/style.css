@@ -1,0 +1,106 @@
+Header {
+  background: url('https://static.makeuseof.com/wp-content/uploads/2013/08/windows-laptop-workstation-desk-featured-670x335.jpg');
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+.full-width {
+  /**width: 1200px;
+  text-align: center;
+  display: flex; **/
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: row;*/
+  margin-top: 0;
+  /*align-items: center; */
+  justify-content: center;
+  text-align: center;
+  
+}
+.half-width {
+  margin-top: 0;
+ /*flex: 50%*/
+}
+.one-third {
+  flex: 33%
+  /*width: 400px;
+  float: left;*/
+}
+h1 {
+  font-size: 40px;
+}
+nav, ul {
+  margin-top: 0;
+  margin-left: 40%;
+  display: flex;
+  flex-direction: row;
+}
+ul li {
+  
+  /*float: left;*/
+  list-style: none;
+  margin-right: 15px;
+}
+nav ul {
+  background: black;
+}
+a {
+  color: tomato;
+  font-size: 30px;
+  text-decoration: none;
+}
+h3 {
+  clear: both;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5%;
+}
+h4 {
+  color: purple;
+  font-size: 25px;
+}
+p{
+  font-size: 20px;
+  padding: 1px 20px;
+}
+#bigger {
+  font-size: 25px;
+}
+span {
+  color: rgb(180,10,80)
+}
+#about {
+  background: beige;
+  overflow: auto;
+}
+#content {
+  background: #10d3;
+  overflow: auto;
+}
+#contact {
+  background: #35a1;
+  overflow: auto;
+}
+#contact a {
+  color: red;
+  font-size: 25px;
+}
+#contact ul {
+  margin: 0;
+  
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .half-width, .one-third {
+    flex: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
